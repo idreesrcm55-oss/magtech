@@ -12,7 +12,6 @@ const unsplash = (id, w = 1200) =>
 
 export const IMAGES = {
   // Brand
-  logoWhite: "/images/logo-white.png",
 
   // Home page (from the live site)
   heroVideo: "/images/hero.mp4",
