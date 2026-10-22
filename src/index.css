@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  GLOBAL COLORS
+  Change any value below (space-separated R G B) to re-theme the entire site.
+  These are mapped to Tailwind classes in tailwind.config.js (bg-primary, text-dark, ...).
+  The palette matches the live billingsystematics.com theme.
+*/
+:root {
+  --color-primary: 29 39 108;       /* brand navy         #1D276C  buttons, icons */
+  --color-primary-dark: 36 42 86;   /* deep navy          #242A56  dark sections, footer */
+  --color-secondary: 191 209 255;   /* periwinkle         #BFD1FF  accents on dark bg */
+  --color-accent: 34 197 94;        /* success green      #22C55E */
+  --color-gold: 252 185 0;          /* highlight gold     #FCB900 */
+  --color-dark: 36 42 86;           /* headings           #242A56 */
+  --color-body: 57 58 86;           /* paragraph text     #393A56 */
+  --color-light: 239 242 255;       /* section bg         #EFF2FF */
+  --color-danger: 220 38 38;        /* form errors        #DC2626 */
+  --color-overlay: 0 0 0;           /* image overlays     #000000 */
+  --color-white: 255 255 255;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-base leading-relaxed text-body antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-bold text-dark;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-secondary ring-offset-2 ring-offset-primary-dark;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .form-input {
+    @apply w-full rounded-xl border border-dark/15 bg-white px-4 py-3 text-dark placeholder:text-body/60 transition duration-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20;
+  }
+}
