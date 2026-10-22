@@ -10,10 +10,10 @@ export const SITE = {
   tagline: "Streamlined Medical Billing Solutions",
   description:
     "MAGTECH RCM Solutions is a cutting-edge healthcare technology company that empowers organizations to streamline operations and deliver superior patient care.",
-  email: "obaidullah70783@gmail.com",
+  email: "magtechrcm@gmail.com",
   phone: "+1 (737) 310-1617",
   phoneHref: "tel:+17373101617",
-  emailHref: "mailto:obaidullah70783@gmail.com",
+  emailHref: "mailto:magtechrcm@gmail.com",
   address: {
     line1: "5900 Balcones Drive #32568",
     line2: "Austin, TX 78731, USA",
