@@ -10,13 +10,13 @@ export const SITE = {
   tagline: "Streamlined Medical Billing Solutions",
   description:
     "MAGTECH RCM Solutions is a cutting-edge healthcare technology company that empowers organizations to streamline operations and deliver superior patient care.",
-  email: "info@billingsystematics.com",
+  email: "obaidullah70783@gmail.com",
   phone: "+1 (737) 310-1617",
   phoneHref: "tel:+17373101617",
-  emailHref: "mailto:info@billingsystematics.com",
+  emailHref: "mailto:obaidullah70783@gmail.com",
   address: {
-    line1: "5900 Balcones Drive #25636",
-    line2: "Austin, TX, 78731, USA",
+    line1: "5900 Balcones Drive #32568",
+    line2: "Austin, TX 78731, USA",
   },
   // Google Maps embed for the contact page (search query of the address above)
   mapEmbedUrl:
@@ -24,14 +24,15 @@ export const SITE = {
   foundedYear: 2014,
   // Set a URL to show the icon in the footer; leave "" to hide it.
   socials: {
-    facebook: "https://www.facebook.com/share/195BhTbqWk/",
-    linkedin: "https://www.linkedin.com/company/billing-systematics/",
+    facebook: "#",
+    linkedin: "#",
     twitter: "#",
     google: "#", // Google Reviews link
     instagram: "#",
   },
   cta: { label: "Talk to An Expert", href: "/schedule-a-demo" },
   copyright: `Copyright © ${new Date().getFullYear()} MAGTECH RCM Solutions`,
-  poweredBy: { label: "FiNASAL", href: "https://finasaltech.com" },
+  poweredBy: { label: "MAGTECH", href: "/" },
+  whatsapp: { label: "Help Desk", href: "https://wa.me/17373101617" },
   showTopBar: false, // thin email/phone strip above the header
 };

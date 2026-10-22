@@ -18,8 +18,7 @@ export default function SocialLinks({ size = "md", className = "" }) {
         <li key={key}>
           <a
             href={SITE.socials[key]}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...(SITE.socials[key].startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
             aria-label={`${SITE.name} on ${label}`}
             className="block text-white transition duration-300 hover:text-secondary"
           >

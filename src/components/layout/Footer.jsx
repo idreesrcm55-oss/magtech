@@ -69,14 +69,9 @@ export default function Footer() {
         <Container className="py-8 text-center">
           <p>
             {SITE.copyright} &nbsp;|&nbsp; Powered by{" "}
-            <a
-              href={SITE.poweredBy.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold transition hover:text-white"
-            >
+            <Link to={SITE.poweredBy.href} className="text-gold transition hover:text-white">
               {SITE.poweredBy.label}
-            </a>
+            </Link>
           </p>
         </Container>
       </div>

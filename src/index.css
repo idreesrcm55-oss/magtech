@@ -6,7 +6,7 @@
   GLOBAL COLORS
   Change any value below (space-separated R G B) to re-theme the entire site.
   These are mapped to Tailwind classes in tailwind.config.js (bg-primary, text-dark, ...).
-  The palette matches the live billingsystematics.com theme.
+  Site colour palette.
 */
 :root {
   --color-primary: 29 39 108;       /* brand navy         #1D276C  buttons, icons */

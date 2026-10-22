@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import TopBar from "./TopBar";
 import Header from "./Header";
 import Footer from "./Footer";
+import WhatsAppButton from "../ui/WhatsAppButton";
 import useScrollTop from "../../hooks/useScrollTop";
 import { SITE } from "../../config/site";
 
@@ -21,6 +22,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
