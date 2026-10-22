@@ -166,19 +166,10 @@ export const MISSION = {
   text: "As the leading provider of innovative medical billing solutions, MAGTECH RCM Solutions is dedicated to helping healthcare providers achieve their goals. Our cutting-edge technology combined with our deep industry expertise ensures that your practice is equipped to thrive in today’s competitive landscape.",
   image: IMAGES.mission,
   imageAlt: "Nurse reviewing a care plan with a smiling senior patient",
-  counter: { label: "Happiness Score", value: 97, suffix: "%" },
   callout: "HIPAA-compliant medical billing services for data safety.",
 };
 
-// Animated counters used on the About page.
-export const STATS = [
-  { value: 24, suffix: "/7", label: "Support Available" },
-  { value: 2, suffix: "M+", label: "Claims Processed" },
-  { value: 97, suffix: "%", label: "Happiness Score" },
-  { value: 30, suffix: "+", label: "Specialties Served" },
-];
 
-export const CTA = {
   title: "Ready to Maximize Your Revenue?",
   text: "Let our billing experts find the revenue you're missing. Get a free practice analysis today.",
 };

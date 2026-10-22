@@ -5,7 +5,6 @@ import SectionHeading from "../components/ui/SectionHeading";
 import IconBox from "../components/ui/IconBox";
 import Reveal from "../components/ui/Reveal";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
-import StatsRow from "../components/sections/StatsRow";
 import CTABanner from "../components/sections/CTABanner";
 import { PAGES } from "../data/pages";
 
@@ -48,9 +47,6 @@ export default function About() {
               </Reveal>
             ))}
           </div>
-          <Reveal>
-            <StatsRow className="mt-16" />
-          </Reveal>
         </Container>
       </section>
 
