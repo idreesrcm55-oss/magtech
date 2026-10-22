@@ -132,15 +132,15 @@ export const WHAT_WE_OFFER = {
 
 export const WHY_CHOOSE_US = {
   eyebrow: "Why Choose Us",
-  title: `Trusted medical billing since ${SITE.foundedYear}`,
-  text: `MAGTECH RCM Solutions is a trusted medical billing partner since ${SITE.foundedYear}, offering reliable and efficient solutions to streamline your revenue cycle and maximize your practice’s financial performance.`,
+  title: "Your trusted medical billing partner",
+  text: `MAGTECH RCM Solutions is a trusted medical billing partner, offering reliable and efficient solutions to streamline your revenue cycle and maximize your practice’s financial performance.`,
   image: IMAGES.whyChooseUs,
   imageAlt: "Doctors and nurses reviewing information on a tablet",
   items: [
     {
       icon: Stethoscope,
       title: "Experience",
-      text: `Our team of experienced professionals has been helping healthcare providers streamline their revenue cycles and optimize their financial performance since ${SITE.foundedYear}.`,
+      text: "Our team of experienced professionals helps healthcare providers streamline their revenue cycles and optimize their financial performance.",
     },
     {
       icon: Gem,
@@ -172,7 +172,7 @@ export const MISSION = {
 
 // Animated counters used on the About page.
 export const STATS = [
-  { value: new Date().getFullYear() - SITE.foundedYear, suffix: "+", label: "Years of Experience" },
+  { value: 24, suffix: "/7", label: "Support Available" },
   { value: 2, suffix: "M+", label: "Claims Processed" },
   { value: 97, suffix: "%", label: "Happiness Score" },
   { value: 30, suffix: "+", label: "Specialties Served" },

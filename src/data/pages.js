@@ -12,19 +12,19 @@ export const PAGES = {
   home: {
     seoTitle: `${SITE.name} | ${SITE.tagline}`,
     seoDescription:
-      "Medical billing, coding, credentialing and revenue cycle management for US healthcare practices. HIPAA-compliant. Trusted since 2014.",
+      "Medical billing, coding, credentialing and revenue cycle management for US healthcare practices. HIPAA-compliant.",
   },
 
   about: {
     title: "About Us",
-    seoDescription: `Learn about ${SITE.name}, a healthcare technology and medical billing company helping providers since ${SITE.foundedYear}.`,
+    seoDescription: `Learn about ${SITE.name}, a healthcare technology and medical billing company helping providers get paid faster.`,
     image: IMAGES.pageHero,
     story: {
       eyebrow: "Our Story",
       title: "Built to Make Medical Billing Simple",
       text: [
         `${SITE.name} was founded in ${SITE.foundedYear} with a simple goal: to help healthcare providers get paid accurately and on time, without drowning in paperwork.`,
-        "What started as a small team of billing specialists has grown into a full-service healthcare technology company offering medical billing, coding, credentialing, revenue cycle management and practice-growth services to providers across the United States.",
+        "We are a full-service healthcare technology company offering medical billing, coding, credentialing, revenue cycle management and practice-growth services to providers across the United States.",
         "Today we combine certified experts with cloud-based technology and analytics to give practices of every size the financial clarity they need to thrive.",
       ],
       image: IMAGES.aboutStory,

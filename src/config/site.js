@@ -21,7 +21,7 @@ export const SITE = {
   // Google Maps embed for the contact page (search query of the address above)
   mapEmbedUrl:
     "https://www.google.com/maps?q=5900+Balcones+Drive+Austin+TX+78731&output=embed",
-  foundedYear: 2014,
+  foundedYear: 2026,
   // Set a URL to show the icon in the footer; leave "" to hide it.
   socials: {
     facebook: "#",
