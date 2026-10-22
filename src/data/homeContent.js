@@ -169,7 +169,7 @@ export const MISSION = {
   callout: "HIPAA-compliant medical billing services for data safety.",
 };
 
-
+export const CTA = {
   title: "Ready to Maximize Your Revenue?",
   text: "Let our billing experts find the revenue you're missing. Get a free practice analysis today.",
 };
