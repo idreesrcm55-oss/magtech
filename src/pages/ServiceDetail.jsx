@@ -123,7 +123,7 @@ export default function ServiceDetail() {
 
             <Reveal className="mt-12">
               <h2 className="mb-8 text-2xl font-bold">{labels.processTitle}</h2>
-              <ol className="relative space-y-8 border-l-2 border-primary/15 pl-8">
+              <ol className="relative ml-5 space-y-8 border-l-2 border-primary/15 pl-8">
                 {service.process.map((step, i) => (
                   <li key={step.title} className="relative">
                     <span className="absolute -left-[3.3rem] flex h-10 w-10 items-center justify-center rounded-full bg-primary font-heading font-bold text-white ring-4 ring-white">

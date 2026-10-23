@@ -9,10 +9,11 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Chat with ${SITE.name} on WhatsApp`}
-      className="fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 font-semibold text-white shadow-lg transition duration-300 hover:-translate-y-0.5 hover:bg-[#1ebe5a] hover:shadow-xl sm:bottom-6 sm:right-6"
+      className="fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-full bg-[#25D366] p-3 font-semibold text-white shadow-lg transition duration-300 hover:-translate-y-0.5 hover:bg-[#1ebe5a] hover:shadow-xl sm:bottom-6 sm:right-6 sm:px-5"
     >
       <FaWhatsapp className="h-7 w-7" aria-hidden="true" />
-      <span className="text-lg">{SITE.whatsapp.label}</span>
+      {/* Icon-only on phones so it doesn't cover page content */}
+      <span className="hidden text-lg sm:inline">{SITE.whatsapp.label}</span>
     </a>
   );
 }

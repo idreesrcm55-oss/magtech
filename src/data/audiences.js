@@ -26,6 +26,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { IMAGES } from "./images";
+import { SITE } from "../config/site";
 
 export const AUDIENCES = [
   {
@@ -33,11 +34,11 @@ export const AUDIENCES = [
     title: "Outsource Medical Billing",
     image: IMAGES.outsource,
     seoDescription:
-      "Outsource your medical billing to MAGTECH RCM Solutions and get faster payments, fewer denials and lower costs.",
+      `Outsource your medical billing to ${SITE.name} and get faster payments, fewer denials and lower costs.`,
     eyebrow: "Outsourcing Made Simple",
     heading: "Outsource Your Medical Billing with Confidence",
     intro: [
-      "In-house billing is expensive, time-consuming and hard to scale. Outsourcing to MAGTECH RCM Solutions gives you a full team of billing, coding and AR specialists for less than the cost of a single in-house hire.",
+      `In-house billing is expensive, time-consuming and hard to scale. Outsourcing to ${SITE.name} gives you a full team of billing, coding and AR specialists for less than the cost of a single in-house hire.`,
       "We integrate with your existing systems and start improving your collections from the first month.",
     ],
     challenges: [

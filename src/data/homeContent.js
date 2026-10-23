@@ -43,17 +43,17 @@ export const HIGHLIGHTS = [
   {
     icon: HandCoins,
     title: "Optimized RCM",
-    text: "MAGTECH RCM Solutions streamlines your revenue cycle, boosts cash flow, and enhances patient satisfaction.",
+    text: `${SITE.name} streamlines your revenue cycle, boosts cash flow, and enhances patient satisfaction.`,
   },
   {
     icon: TrendingUp,
     title: "Increased Revenue",
-    text: "MAGTECH RCM Solutions ensures accurate claim submission, maximizing reimbursements and driving long-term growth.",
+    text: `${SITE.name} ensures accurate claim submission, maximizing reimbursements and driving long-term growth.`,
   },
   {
     icon: PieChart,
     title: "Fast Claim Processing",
-    text: "MAGTECH RCM Solutions optimizes doctors' cash flow by identifying billing issues and providing electronic claim processing solutions for faster payments.",
+    text: `${SITE.name} optimizes doctors' cash flow by identifying billing issues and providing electronic claim processing solutions for faster payments.`,
   },
 ];
 
@@ -61,41 +61,41 @@ export const ABOUT = {
   eyebrow: "About Us",
   title: "Analytics That Accelerate Revenue",
   text: [
-    "MAGTECH RCM Solutions is a leading provider of cloud-based healthcare technology solutions, designed to help growing organizations optimize their operations and deliver exceptional patient care.",
+    `${SITE.name} is a leading provider of cloud-based healthcare technology solutions, designed to help growing organizations optimize their operations and deliver exceptional patient care.`,
   ],
   image: IMAGES.about,
-  imageAlt: "MAGTECH RCM Solutions office building",
+  imageAlt: `${SITE.name} office building`,
 };
 
 export const WHAT_WE_DO = {
   eyebrow: "What We Do",
   title: "Streamlining Healthcare Billing, Maximizing Revenue",
-  text: "MAGTECH RCM Solutions provides expert medical billing and revenue cycle management services to a wide range of healthcare providers. We partner with practices of all sizes, from solo practitioners to large healthcare systems, to optimize operations and drive financial success.",
+  text: `${SITE.name} provides expert medical billing and revenue cycle management services to a wide range of healthcare providers. We partner with practices of all sizes, from solo practitioners to large healthcare systems, to optimize operations and drive financial success.`,
   background: IMAGES.whatWeDoBg,
   cardDecor: IMAGES.cardDecor,
   items: [
     {
       icon: Code,
       title: "Medical Coding Services",
-      text: "At MAGTECH RCM Solutions, we transform complex clinical documentation into precise ICD-10, CPT, and HCPCS codes. Our certified coders ensure compliance, reduce denials, and optimize your revenue cycle. Let us handle the code — you focus on patient care.",
+      text: `At ${SITE.name}, we transform complex clinical documentation into precise ICD-10, CPT, and HCPCS codes. Our certified coders ensure compliance, reduce denials, and optimize your revenue cycle. Let us handle the code — you focus on patient care.`,
       href: "/services/medical-coding-services",
     },
     {
       icon: Receipt,
       title: "Medical Billing Services",
-      text: "From claim submission to payment posting and denial management, MAGTECH RCM Solutions streamlines your billing operations. We maximize reimbursements, minimize delays, and provide real-time reporting — all with a personalized touch that fits your practice’s unique needs.",
+      text: `From claim submission to payment posting and denial management, ${SITE.name} streamlines your billing operations. We maximize reimbursements, minimize delays, and provide real-time reporting — all with a personalized touch that fits your practice’s unique needs.`,
       href: "/services/medical-billing",
     },
     {
       icon: IdCard,
       title: "Credentialing Services",
-      text: "Get your providers enrolled with insurance networks quickly and correctly. MAGTECH RCM Solutions manages the entire credentialing lifecycle — from application to re-credentialing — so you can start seeing patients and getting paid without delay.",
+      text: `Get your providers enrolled with insurance networks quickly and correctly. ${SITE.name} manages the entire credentialing lifecycle — from application to re-credentialing — so you can start seeing patients and getting paid without delay.`,
       href: "/services/provider-credentialing-services",
     },
     {
       icon: HandHeart,
       title: "HealthCare RCM Services",
-      text: "We don’t just bill — we manage your entire revenue cycle. From front-end eligibility verification to back-end collections, MAGTECH RCM Solutions ensures every dollar is captured. Our data-driven approach boosts cash flow, reduces AR days, and enhances financial health.",
+      text: `We don’t just bill — we manage your entire revenue cycle. From front-end eligibility verification to back-end collections, ${SITE.name} ensures every dollar is captured. Our data-driven approach boosts cash flow, reduces AR days, and enhances financial health.`,
       href: "/services/revenue-cycle-management-rcm",
     },
   ],
@@ -133,7 +133,7 @@ export const WHAT_WE_OFFER = {
 export const WHY_CHOOSE_US = {
   eyebrow: "Why Choose Us",
   title: "Your trusted medical billing partner",
-  text: `MAGTECH RCM Solutions is a trusted medical billing partner, offering reliable and efficient solutions to streamline your revenue cycle and maximize your practice’s financial performance.`,
+  text: `${SITE.name} is a trusted medical billing partner, offering reliable and efficient solutions to streamline your revenue cycle and maximize your practice’s financial performance.`,
   image: IMAGES.whyChooseUs,
   imageAlt: "Doctors and nurses reviewing information on a tablet",
   items: [
@@ -163,7 +163,7 @@ export const WHY_CHOOSE_US = {
 export const MISSION = {
   title: "Your Vision and Our Mission",
   subtitle: "Tech-Driven Medical Billing Solutions",
-  text: "As the leading provider of innovative medical billing solutions, MAGTECH RCM Solutions is dedicated to helping healthcare providers achieve their goals. Our cutting-edge technology combined with our deep industry expertise ensures that your practice is equipped to thrive in today’s competitive landscape.",
+  text: `As the leading provider of innovative medical billing solutions, ${SITE.name} is dedicated to helping healthcare providers achieve their goals. Our cutting-edge technology combined with our deep industry expertise ensures that your practice is equipped to thrive in today’s competitive landscape.`,
   image: IMAGES.mission,
   imageAlt: "Nurse reviewing a care plan with a smiling senior patient",
   callout: "HIPAA-compliant medical billing services for data safety.",

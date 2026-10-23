@@ -9,6 +9,14 @@
 */
 import { SPECIALTIES } from "./specialties";
 
+// Validation and success-toast text shared by every form
+export const FORM_MESSAGES = {
+  required: (label) => `${label} is required.`,
+  invalidEmail: "Please enter a valid email address.",
+  invalidPhone: "Please enter a valid phone number.",
+  emailFallback: "Prefer email? Send these details to", // followed by SITE.email
+};
+
 export const CONTACT_FORM = {
   title: "Send Us a Message",
   submitLabel: "Send Message",

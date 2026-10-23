@@ -10,7 +10,7 @@ export default function Logo({ className = "" }) {
         aria-hidden="true"
         className="flex h-10 w-10 items-center justify-center rounded-lg bg-white font-heading text-lg font-extrabold text-primary-dark md:h-11 md:w-11"
       >
-        M
+        {SITE.shortName.charAt(0)}
       </span>
       <span className="flex flex-col leading-none">
         <span className="font-heading text-xl font-extrabold tracking-wide md:text-2xl">{brand}</span>

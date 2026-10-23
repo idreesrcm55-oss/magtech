@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Container from "../ui/Container";
 import Logo from "../ui/Logo";
 import Button from "../ui/Button";
@@ -64,12 +64,19 @@ export default function Header() {
           </Button>
           <button
             type="button"
-            onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
+            onClick={() => setMobileOpen((o) => !o)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
-            className="rounded-full p-2 text-white transition hover:bg-white/10 lg:hidden"
+            aria-controls="mobile-menu"
+            className={`flex h-11 w-11 items-center justify-center text-white transition lg:hidden ${
+              mobileOpen ? "rounded-md bg-primary-dark ring-1 ring-white/20" : "rounded-full hover:bg-white/10"
+            }`}
           >
-            <Menu className="h-7 w-7" aria-hidden="true" />
+            {mobileOpen ? (
+              <X className="h-6 w-6" aria-hidden="true" />
+            ) : (
+              <Menu className="h-7 w-7" aria-hidden="true" />
+            )}
           </button>
         </div>
       </Container>

@@ -17,8 +17,8 @@ const headingClass = "mb-6 text-[22px] text-white";
 export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
-      <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:py-20">
-        <div>
+      <Container className="grid grid-cols-2 gap-x-6 gap-y-12 py-16 lg:grid-cols-4 lg:py-20">
+        <div className="col-span-2 sm:col-span-1">
           <Logo />
           <p className="mt-6 max-w-[240px] leading-relaxed">{SITE.description}</p>
           <SocialLinks className="mt-8" />
@@ -39,8 +39,8 @@ export default function Footer() {
           </nav>
         ))}
 
-        <div>
-          <h2 className={headingClass}>Get In Touch</h2>
+        <div className="col-span-2 sm:col-span-1">
+          <h2 className={headingClass}>{SITE.footer.contactTitle}</h2>
           <ul className="space-y-6">
             {CONTACT_ITEMS.map(({ icon: Icon, lines, href }) => {
               const text = lines.map((line) => (
@@ -66,9 +66,10 @@ export default function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="py-8 text-center">
+        {/* Extra bottom padding below lg keeps the floating WhatsApp button off the copyright line */}
+        <Container className="pb-24 pt-8 text-center lg:pb-8">
           <p>
-            {SITE.copyright} &nbsp;|&nbsp; Powered by{" "}
+            {SITE.copyright} &nbsp;|&nbsp; {SITE.poweredBy.prefix}{" "}
             <Link to={SITE.poweredBy.href} className="text-gold transition hover:text-white">
               {SITE.poweredBy.label}
             </Link>

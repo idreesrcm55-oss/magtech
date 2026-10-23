@@ -25,8 +25,12 @@ npm run preview  # preview the production build locally
 
 You can change most of the site's content without editing any component markup. Each data file has a comment at the top that explains its fields.
 
-### Contact info, company name, socials → `src/config/site.js`
-Email, phone, address, social links, founding year, the main "Talk to An Expert" button, the copyright line and the "Powered by" credit are all set here. Set a social link to `""` to hide its icon. Set `showTopBar: true` to show a thin email/phone strip above the header. The header, footer, contact page, CTAs and forms all read from this file. Change a value once and every page updates.
+### Company name, contact info, socials → `src/config/site.js`
+The company name, short name, email, phone and address are each typed **once**, in the `EDIT HERE` block at the top of this file. Everything else is built from them: call and email links, the WhatsApp Help Desk link, the contact-page map, the copyright line, the logo, the browser-tab title (`index.html`) and every mention of the company name in the page text.
+
+The rest of `SITE` holds the tagline, description, social links, founding year, the main "Talk to An Expert" button, footer labels and the "Powered by" credit. Set a social link to `""` to hide its icon. Set `showTopBar: true` to show a thin email/phone strip above the header.
+
+> **Writing page text:** never type the company name, phone or email into a data file. Use a template string, for example `` `Outsource your billing to ${SITE.name}` ``, and import `SITE` from `../config/site` at the top of the file. That way a name change in `site.js` updates every page.
 
 ### Colors → `src/index.css`
 Colors are CSS variables in `:root`, written as space-separated RGB values:
@@ -48,23 +52,23 @@ Changing a value re-themes the whole site. The variables map to Tailwind classes
 | `danger` | Form validation errors |
 
 ### Fonts → `index.html` + `tailwind.config.js`
-Poppins (headings) and Open Sans (body) load from Google Fonts — the same fonts as the live site.
+Poppins (headings) and Open Sans (body) load from Google Fonts — set in `tailwind.config.js`.
 
 ### Images → `src/data/images.js`
-Every image is listed in this one file. The home page uses the live site's own photos, logo and hero video, stored in `public/images/`. Inner pages still use Unsplash placeholders. To swap any image, put the file in `public/images/` and change its path, e.g. `"/images/hero.jpg"`.
+Every image is listed in this one file. The home page photos and hero video are stored in `public/images/`; the logo is text built from `SITE.name` in `src/components/ui/Logo.jsx`. Inner pages still use Unsplash placeholders. To swap any image, put the file in `public/images/` and change its path, e.g. `"/images/hero.jpg"`.
 
-The hero background is `public/images/hero.mp4`, a 1.8 MB video converted from the live site's 92 MB GIF, with `hero-poster.jpg` as its first frame. Visitors who prefer reduced motion see only the still image.
+The hero background is `public/images/hero.mp4`, a 1.8 MB video converted from a 92 MB GIF, with `hero-poster.jpg` as its first frame. Visitors who prefer reduced motion see only the still image.
 
 ### Page content
 | What | File |
 |---|---|
-| Home page sections (hero, highlights, about, stats, CTA, …) | `src/data/homeContent.js` |
+| Home page sections (hero, highlights, about, why choose us, mission, CTA, …) | `src/data/homeContent.js` |
 | Services: cards plus a page at `/services/<slug>` for each one | `src/data/services.js` |
 | "For You" pages at `/for-you/<slug>` | `src/data/audiences.js` |
 | Specialties grid | `src/data/specialties.js` |
 | FAQs | `src/data/faqs.js` |
 | Inner page titles, SEO text, About / Contact / Demo copy | `src/data/pages.js` |
-| Contact and demo form fields | `src/data/forms.js` |
+| Contact and demo form fields, validation and success messages | `src/data/forms.js` |
 | Header menu and footer links | `src/data/navigation.js` |
 
 **Add a service:** copy an object in `services.js` and give it a new unique `slug`. Its page, card and menu entry appear automatically. "For You" pages in `audiences.js` work the same way.
@@ -85,9 +89,9 @@ src/
 ├── components/
 │   ├── layout/  TopBar, Header, Dropdown, MobileMenu, Footer, Layout
 │   ├── ui/      Button, Container, SectionHeading, Card, IconBox, Badge, Accordion,
-│   │            StatCounter, ProgressBar, PageHero, CheckList, Reveal, Seo, …
+│   │            ProgressBar, PageHero, CheckList, Reveal, Seo, WhatsAppButton, …
 │   └── sections/ Hero, Highlights, AboutSection, WhatWeDo, BillingFeatures,
-│                WhatWeOffer, WhyChooseUs, MissionSection, StatsRow, CTABanner, ContactForm
+│                WhatWeOffer, WhyChooseUs, MissionSection, CTABanner, ContactForm
 ├── pages/       Home, About, Services, ServiceDetail, Specialties, AudiencePage,
 │                FAQs, Contact, ScheduleDemo, NotFound
 ├── hooks/       useScrollTop.js

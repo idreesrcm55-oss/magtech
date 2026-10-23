@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import FormField from "../ui/FormField";
 import Toast from "../ui/Toast";
 import { SITE } from "../../config/site";
+import { FORM_MESSAGES } from "../../data/forms";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[+\d\s().-]{7,}$/;
@@ -14,9 +15,9 @@ function validate(fields, values) {
   const errors = {};
   fields.forEach((f) => {
     const v = values[f.name].trim();
-    if (f.required && !v) errors[f.name] = `${f.label} is required.`;
-    else if (v && f.type === "email" && !EMAIL_RE.test(v)) errors[f.name] = "Please enter a valid email address.";
-    else if (v && f.type === "tel" && !PHONE_RE.test(v)) errors[f.name] = "Please enter a valid phone number.";
+    if (f.required && !v) errors[f.name] = FORM_MESSAGES.required(f.label);
+    else if (v && f.type === "email" && !EMAIL_RE.test(v)) errors[f.name] = FORM_MESSAGES.invalidEmail;
+    else if (v && f.type === "tel" && !PHONE_RE.test(v)) errors[f.name] = FORM_MESSAGES.invalidPhone;
   });
   return errors;
 }
@@ -82,7 +83,7 @@ export default function ContactForm({ form }) {
 
       <Toast message={mailto ? form.successMessage : null} onClose={closeToast}>
         <a href={mailto ?? undefined} className="mt-2 inline-block font-semibold text-primary hover:text-secondary">
-          Prefer email? Send these details to {SITE.email}
+          {FORM_MESSAGES.emailFallback} {SITE.email}
         </a>
       </Toast>
     </>
