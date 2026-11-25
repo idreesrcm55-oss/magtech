@@ -37,13 +37,13 @@ export const SITE = {
   mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(`${ADDRESS.line1}, ${ADDRESS.line2}`)}&output=embed`,
   foundedYear: 2026,
   // Set a URL to show the icon in the footer; leave "" to hide it.
-  socials: {
-    facebook: "#",
-    linkedin: "#",
-    twitter: "#",
-    google: "#", // Google Reviews link
-    instagram: "#",
-  },
+ socials: {
+  facebook: "https://www.facebook.com/share/1CdDryiT7X/",
+  linkedin: "https://www.linkedin.com/company/magtech-rcm-solutions/",
+  twitter: "",
+  google: "",
+  instagram: "",
+},
   cta: { label: "Talk to An Expert", href: "/schedule-a-demo" },
   footer: { contactTitle: "Get In Touch" },
   copyright: `Copyright © ${new Date().getFullYear()} ${NAME}`,
